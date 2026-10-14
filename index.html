@@ -199,13 +199,13 @@
     • <strong>兼職</strong>：從事非屬全職的工作。<br>
     • <strong>未在職</strong>：入學前沒有從事工作。<br>
     📅 <strong>填寫期限：10/15（四）前</strong><br><br>
-    <em>操作方式：請直接於下方點選您的姓名與狀態，送出後全班名單將即時連動更新！</em>
+    <em>操作方式：請直接於下方點選您的姓名與狀態，送出後 名單將 即時連動更新！</em>
   </div>
 
   <div class="form-group">
     <label for="studentSelect">① 請選擇您的姓名：</label>
     <select id="studentSelect" onchange="loadCurrentStatus()">
-      <option value="">-- 正在載入學員名單... --</option>
+      <option value="">-- 載入學員名單... --</option>
     </select>
   </div>
 
@@ -223,8 +223,8 @@
 
   <hr>
 
-  <h3>📋 目前即時彙整名單</h3>
-  <div id="loadingText" class="loading">正在向雲端同步最新資料...</div>
+  <h3>📋 Hayley彙整名單</h3>
+  <div id="loadingText" class="loading">正在同步最新資料...</div>
   <div class="result-box" id="resultDisplay"></div>
   <button class="btn copy-btn" onclick="copyResult()">📋 一鍵複製全部名單至 LINE 回報</button>
 </div>
@@ -330,7 +330,7 @@
   function copyResult() {
     const text = document.getElementById('resultDisplay').textContent;
     navigator.clipboard.writeText(text).then(() => {
-      alert("✅ 已成功複製最新名單！您可以直接貼回 LINE 群組向大家匯報。");
+      alert("✅ 已成功複製最新名單！您可以直接貼回 LINE 群組 向大家匯報。");
     });
   }
 </script>
